@@ -524,7 +524,7 @@ func getEntries(ctx *WorkflowExecCtx) ([]*EnPassEntry, error) {
 		entries = append(entries, &EnPassEntry{
 			id:    k,
 			cards: secrets,
-			title: first.Title,
+			title: first.Title + " - " + first.Subtitle,
 			ico:   first.Icon,
 		})
 	}
